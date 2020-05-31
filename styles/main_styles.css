@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+/*********************************
+ Body and some general stuff
+*********************************/
+@media screen and (min-width:768px){
+	*{
+		width: 100%;
+	}
+}
+
+div
+{
+	position: relative;
+	
+}
+/*********************************
+10.1  Slider
+*********************************/
+
+.section_title{
+	font-weight: bold;
+}
+
+.test_slider_container
+{
+	margin-top: 55px;	
+
+}
+
+
+ .test_item .myimg
+{
+	border-radius: 50%;
+	width: px;
+	height: 280px;
+	border-style: double;
+	border-color: rgba(3, 3, 63, 0.8);
+
+}
+.test_content_container
+{
+	position: relative;
+	width: 100%;
+	height: 300px;	
+
+	background: rgba(150, 150, 185, 0.8);
+}
+.test_content
+{
+	
+	padding-top: 44px;
+	padding-right: 5px;
+	padding-left: 5px;
+	line-height: 300%;
+}
+.test_quote_text
+{
+	font-weight: bold;
+	color:rgb(229, 229, 247);
+	padding: 0%;
+width: 100%;
+line-height: 300%;
+font-size: 20px;
+
+}
+
+.test_slider_nav
+{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 10;
+	cursor: pointer;
+}
+.test_slider_nav .nav_path,
+.test_slider_nav .nav_arrow
+{
+	fill: #c4ced2;
+}
+.test_slider_prev
+{
+	left: -75px;
+}
+.test_slider_next
+{
+	right: -75px;
+}
+
+
+.arrow{
+	width:100%;
+	height:54px;
+	background:url('../images/arrows.png') no-repeat;
+	position: absolute;;
+	top:70%;
+	margin-top:-27px;
+	
+	cursor:pointer;
+	text-indent:-9999px;
+	overflow:hidden;
+	opacity:0.8;
+	border:none !important;
+	text-decoration:none !important;
+	
+	-moz-transition:0.2s opacity;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+
+.arrow:hover{
+	opacity:1;
+}
+
+#arrowLeft{
+	left:5%;
+	width:100%;
+
+}
+
+#arrowRight{
+	right:5%;
+	width:100%;
+
+	background-position:top right;
+}
+
+/* Hide the arrows if impress is not supported */
+
+#impress.impress-not-supported + .arrow,
+#impress.impress-not-supported + .arrow + .arrow{
+	display:none;
+}
+
